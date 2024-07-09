@@ -26,7 +26,7 @@ class _Payment_ScreenState extends State<Payment_Screen> {
   late List notifications ;
 
   Future<void> add_Notifications(patientname,name,slot) async {
-    final url = Uri.parse('http://192.168.18.8:3030/add/notifications');
+    final url = Uri.parse('http://localhost:3030/add/notifications');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

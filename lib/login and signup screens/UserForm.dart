@@ -23,7 +23,7 @@ class _UserFormState extends State<UserForm> {
   final TextEditingController mobileNumberController = TextEditingController();
 
   Future<void> sendUserData() async {
-    final url = Uri.parse('http://192.168.18.8:3030/add/userdata');
+    final url = Uri.parse('http://localhost:3030/add/userdata');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

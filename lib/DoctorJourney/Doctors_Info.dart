@@ -34,7 +34,7 @@ class _doctors_profileState extends State<doctors_profile> {
 
 
   Future<List<Doctor_Profile>> fetchDoctors(String name) async {
-    final url = Uri.parse('http://192.168.18.8:3030/read/details/doctorprofile2');
+    final url = Uri.parse('http://localhost:3030/read/details/doctorprofile2');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

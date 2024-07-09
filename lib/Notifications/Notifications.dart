@@ -30,7 +30,7 @@ class _Notification_ScreenState extends State<Notification_Screen> {
     final prefs = await SharedPreferences.getInstance();
     final String? patientname = prefs.getString('patientname');
     print('Retrieved patientname from SharedPreferences: $patientname');
-    final url = Uri.parse('http://192.168.18.8:3030/read/notifications');
+    final url = Uri.parse('http://localhost:3030/read/notifications');
 
     final response = await http.post(
       url,

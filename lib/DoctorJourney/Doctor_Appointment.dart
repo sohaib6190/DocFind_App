@@ -41,7 +41,7 @@ class _doctor_appointmentState extends State<doctor_appointment> {
 
   }
   Future<List<Doctor_Appointment>> fetchDoctorsAppointments(String name) async {
-    final url = Uri.parse('http://192.168.18.8:3030/read/appointments');
+    final url = Uri.parse('http://localhost:3030/read/appointments');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
